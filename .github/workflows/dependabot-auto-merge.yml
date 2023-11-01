@@ -1,0 +1,10 @@
+name: Dependabot auto-label
+on: pull_request_target
+permissions:
+  pull-requests: write
+  issues: write
+  repository-projects: write
+
+jobs:
+  dependabot:
+    uses: actionsaustenstone/.github/.github/workflows/dependabot-auto-merge.yml@main
