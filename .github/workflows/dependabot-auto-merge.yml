@@ -6,4 +6,4 @@ jobs:
     permissions:
       pull-requests: write
       contents: write
-    uses: actionsaustenstone/.github/.github/workflows/dependabot-auto-merge.yml@main
+    uses: actionsaustenstone/.github/.github/workflows/dependabot-auto-merge.yml@v2
