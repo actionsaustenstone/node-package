@@ -25,6 +25,14 @@ jobs:
     - run: npm ci
     - run: npm run build
     - run: npm test
-    - run: npm publish
+
+    - name: 😺 GitHub publish
+      continue-on-error: true
       env:
-        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        OWNER: ${{ github.repository_owner }}
+        NPM_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        echo "@${OWNER}:registry=https://npm.pkg.github.com" >> .npmrc
+        echo "//npm.pkg.github.com/:_authToken=${NPM_TOKEN}" >> .npmrc
+        cat .npmrc
+        npm publish
