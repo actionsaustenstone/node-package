@@ -1,5 +1,5 @@
 {
-  "name": "@actionsaustenstone/demo-package",
+  "name": "demo-package",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
