@@ -22,7 +22,6 @@ jobs:
     - uses: actions/setup-node@v3
       with:
         registry-url: 'https://npm.pkg.github.com/'
-    - run: cat .npmrc
     - run: npm ci
     - run: npm run build
     - run: npm test
