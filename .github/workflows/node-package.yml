@@ -10,6 +10,6 @@ on:
 
 jobs:
   node:
-    uses: actionsaustenstone/.github/.github/workflows/node-package.yml@v2
+    uses: actionsaustenstone/.github/.github/workflows/node-package.yml@v3
     with:
       context: ${{ toJson(github) }}
