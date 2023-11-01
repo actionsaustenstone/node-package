@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  cicd:
+  node:
     uses: actionsaustenstone/.github/.github/workflows/node-package.yml@main
     with:
       context: ${{ toJson(github) }}
